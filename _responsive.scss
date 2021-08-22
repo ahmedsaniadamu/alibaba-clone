@@ -1,0 +1,17 @@
+ // this sass file is just for responsiveness for different break points (mobile and tablet devices)
+ 
+ // mobile devices
+
+ @mixin  mobile-responsive($max: 480px) {
+     @media screen and (max-width: $max) {
+         @content ;
+     }
+ }
+
+ //tablet devices 
+
+  @mixin  tablet-responsive($min : 500px , $max : 800px) {
+     @media screen and (min-width : $min) and (max-width : $max) {
+         @content ;
+     }
+ }

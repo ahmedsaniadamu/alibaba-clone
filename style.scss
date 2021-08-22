@@ -1,0 +1,994 @@
+// custom style sheet (sass) 
+
+// reset default padding and margin 
+
+@import 'reset' ;
+
+//media query for device responsive 
+
+@import 'responsive' ;
+
+body{
+    font-family: sans-serif;
+    font-size: 32px;
+    background: rgb(244, 249, 250);
+    @include mobile-responsive(){
+        font-size: 16px;
+    }
+}
+
+nav{
+    div.row{
+         img.logo{
+              height: 75px;
+              object-fit: cover;
+              @include mobile-responsive(){
+                 height: 50px;
+              }
+         }
+
+         div.nav-input-container{
+            height: 40px;
+            font-size: 1rem;
+            div.input-group{
+                border-radius: 1rem;
+                border: 2px solid rgb(245, 72, 4);
+               
+                button{
+                    font-size: 0.9rem;
+                     padding: 5px;
+                     background-color: transparent;
+                     border: none;
+                     outline: none ;
+                    &:active,&:hover,&:focus{
+                        border: none;
+                        outline: none;
+                        box-shadow: 0px 0px 0px transparent;
+                    }
+                  }
+                  .product-btn{
+                       border-right: 2px solid rgb(145, 144, 144);
+                      
+                       &:active,&:hover,&:focus{
+                        border-right: 2px solid rgb(145, 144, 144);
+                    }
+                  }
+                    button.search-btn{
+                        font-size: 1rem;
+                        background: rgb(245, 72, 4);
+                        color: rgb(248, 245, 244);
+                        border-top-right-radius: 0.8rem;
+                        border-bottom-right-radius: 0.8rem;   
+
+                          strong{
+                               font-size: 1.2rem;
+                               opacity: 0.7;
+                               font-weight: normal;
+                          } 
+                }
+                .fa-camera{
+                    font-size: 1.3rem;
+                    color: rgb(194, 191, 191);
+                }
+                input{
+                   @include mobile-responsive(){
+                      font-size: 0.7rem;
+                   }
+                    &:focus,&:active{
+                         border: none;
+                        outline: none;
+                        box-shadow: 0px 0px 0px transparent;
+                    }
+                }
+            }
+         }
+         div.nav-item-container{
+             div.row{
+                span{
+                    font-size: 1.5rem;
+                    color: rgb(245, 72, 4);
+                }
+                p{
+                    font-size: 0.9rem;
+                }
+             }
+            }
+    }
+}
+
+div.dropdown-menu-container{
+      position: relative;
+     div.sign-up-dropdown-menu{
+            display: none;
+            width: 300px;
+            background-color: rgb(231, 242, 248);
+            position: absolute;
+            top: 10px;
+            font-size: 1rem;
+            z-index: 99;
+              
+              &::before{
+                 content: '';
+                 padding: 0;
+                 border:15px solid rgb(231, 242, 248);
+                 border-top-color:transparent;
+                 border-right-color:transparent;
+                 border-left-color:transparent ;
+                 background-color: transparent;
+                 position: absolute;
+                 z-index: 3;
+                 top: -30px;
+                 left: 80%;
+              }
+              h4{
+                 color: rgb(121, 118, 118);
+                  font-size: 1rem;
+              }
+              button {
+                 background: rgb(245, 72, 4);
+                 color: rgb(248, 245, 244);
+              }
+             .social-media{
+                 span{
+                      font-size: 2rem;
+                      border-radius: 50%;
+                 }
+                 .fa-facebook{
+                    color: rgb(1, 12, 163);
+                    background-color: rgb(247, 246, 250);
+                 }
+                 .fa-twitter,.fa-linkedin{
+                    color: rgb(95, 135, 253);
+                 }
+                 .fa-google-plus{
+                    color: rgb(212, 21, 21);
+                 }
+             }
+             label{
+                font-size: 0.8rem;
+             }
+             h4.header{
+                background: rgb(231, 242, 248);
+                font-size: 1rem;
+             }
+             ul.list-group{
+                li.list-group-item{
+                   font-size: 0.8rem;
+                   color: rgb(83, 82, 82);
+                   &:hover{
+                      color: rgb(212, 21, 21);
+                   }
+                }
+             }
+     }
+     div.orders-dropdown-menu{
+             display: none;
+             width: 300px;
+            background-color: rgb(231, 242, 248);
+            position: absolute;
+            top: 30px;
+            font-size: 1rem;
+            z-index:  119;
+              
+              &::before{
+                 content: '';
+                 padding: 0;
+                 border:15px solid rgb(231, 242, 248);
+                 border-top-color:transparent;
+                 border-right-color:transparent;
+                 border-left-color:transparent ;
+                 background-color: transparent;
+                 position: absolute;
+                 z-index: 3;
+                 top: -30px;
+                 left: 75%;
+              }
+
+              h4{
+                 font-size: 1rem;
+              }
+              p{
+                  font-size: 0.9rem;
+              }
+              button{
+                    border-radius: 20px;
+                    background-color: rgb(245,72,4);
+                    color: rgb(248, 245, 244);
+              }
+     }
+}
+
+div.sub-menu{
+     font-size: 0.9rem;
+     .d-flex{
+            div{
+                 width: 10%;
+                 text-align: center;
+                 font-weight: 500;
+                 color: rgb(133, 133, 133);
+            }
+            div.large-item{
+                width: 20%;
+            }
+             div.ship-to{
+                 span{
+                      display: inline-block;
+                      height: 10px;
+                      width: 20px;
+                     background : {
+                        image:url('./alibaba-images/countriesFlag.jpg');
+                        repeat:no-repeat;
+                        size: 200px 200px ;
+                        position :-150px -10px;
+                     };
+                 }
+             }
+     }
+}
+
+     div.dropdown-item-container{
+         position: relative;
+         z-index: 10;
+         div.language-dropdown-menu,.ship-to-dropdown-menu{
+             width: 300px;
+            background-color: rgb(231, 242, 248);
+            position: absolute;
+            top: 30px;
+            font-size: 1rem;
+            z-index: 99;
+              
+              &::before{
+                 content: '';
+                 padding: 0;
+                 border:15px solid rgb(231, 242, 248);
+                 border-top-color:transparent;
+                 border-right-color:transparent;
+                 border-left-color:transparent ;
+                 background-color: transparent;
+                 position: absolute;
+                 z-index: 10;
+                 top: -30px;
+                 left: 85%;
+              }
+         }
+         .language-dropdown-menu{
+              display: none;
+             color: rgb(34, 33, 33);
+              h4{
+                 font-size: 1rem;
+                 text-align: center;
+                 letter-spacing: 1px;
+              }
+              p{
+                 font-size: 0.9rem;
+                 color: rgb(124, 124, 124);
+              }
+              button{
+                 background-color: rgb(245,72,4);
+                 color: rgb(247, 246, 250);
+                 transition: .1s;
+                 &:active{
+                     opacity: 0.5;
+                 }
+              }
+         }
+         .ship-to-dropdown-menu{
+            display: none;
+            left: 400px;
+            width: 400px;
+            h4{
+               font-size: 1rem;
+               letter-spacing: 1px;
+            }
+            p{
+              font-size: 0.9rem;
+              color: rgba(0,0,0, 0.5);
+            }
+            button{
+                width: 90%;
+                background-color: rgb(245,72,4);
+                color: rgb(247, 246, 250);
+            }
+            div.d-flex{
+                 div.center-line{
+                    width: 47%;
+                    height: 2px;
+                    background-color: rgba(80, 78, 78, 0.3);
+                    border-radius: 10px;
+                 }
+                 div.center-text{
+                     width: 6%;
+                     font-size: 1.1rem;
+                     height: 30px;
+                     letter-spacing: 1px;
+                     color: rgba(0,0,0, 0.5);
+                 }
+            }
+            div.select-country{
+                  font-size: 1rem;
+                  border:1px solid rgba(0,0,0, 0.2);
+                  
+                    div{
+                       font-size: 1rem;
+                    }
+                    .country-list{
+                        opacity: 0.7;
+                    }
+                    span{
+                      display: inline-block;
+                      height: 10px;
+                      width: 20px;
+                     background : {
+                        image:url('./alibaba-images/countriesFlag.jpg');
+                        repeat:no-repeat;
+                        size: 200px 200px ;
+                        position :-150px -10px;
+                     };
+                 }
+            }
+            input.city{
+                border:1px solid rgba(0,0,0, 0.2);
+                opacity: 0.7;
+                &:hover,&:active,&focus{
+                    outline: none;
+                    border:1px solid rgba(10, 144, 221, 1);
+                } 
+            }
+            button.w-25{
+               background-color: rgb(245, 72, 4);
+               color: rgb(247, 246, 250);
+            }
+         }
+     }
+
+     header{
+          margin-top: 200px;
+          @include mobile-responsive(){
+               margin-top: 150px;
+          }
+          @include tablet-responsive(){
+             margin-top: 150px;
+          }
+
+        div.container{
+           background-color: rgb(236, 247, 250);
+           h4{
+                color: rgba(80, 78, 78, 0.8);
+                font-size: 0.9rem;
+              }
+           ul.list-group{
+              li.list-group-item{
+                  color: rgba(80, 78, 78, 1);
+                  span{
+                        display: inline-block;
+                        width: 30px;
+                        height: 30px;
+                        opacity: 1;
+                        border-radius: 50%;
+ // css3 image sprite   
+                        background: {
+                            image:url('./alibaba-images/alibaba2.png');
+                            size: 230px 230px ;
+                            repeat:no-repeat;
+                        };
+                  }
+                  .electronics{
+                      background: {
+                        position: -80px -10px;
+                      };
+                  }
+                      .apparel{
+                            background: {
+                               position: 2px -12px;
+                         };
+                      }
+                     .vehicle{
+                            background: {
+                               position: -125px -10px;
+                         };
+                      } 
+                      .sports{
+                            background: {
+                               position: -123px -170px;
+                         };
+                      } 
+                      .machinery{
+                            background: {
+                               position: -78px -173px;
+                         };
+                      }  
+                      .home{
+                            background: {
+                               position: -34px -178px;
+                         };
+                      } 
+                      .beauty{
+                            background: {
+                               position: 0px -175px;
+                         };                         
+                      } 
+                      .categories{
+                            background: {
+                               position: -75px -100px;
+                         };
+                      } 
+                 p{
+                    font-size: 0.9rem;     
+                    &:hover{
+                       color: rgb(245,72,4);
+                    }                
+                 }
+                 i{
+                    font-size: 1rem;
+                    opacity: 0.5;
+                 }
+              }
+           }
+        }
+        div.banner{
+           height: 65%;
+           div.carousel{
+                 
+                     ul.carousel-indicators{
+                          z-index: 1;
+                        li{
+                           height: 10px;
+                           width: 10px;
+                           border-radius: 50%;
+                           z-index: 1;
+                        }
+                     }
+                     div.carousel-inner{
+                          div.carousel-item{
+                              img{
+                                  width: 100%;
+                                  height: 310px;
+                                  filter: brightness(90%);
+                              }
+                          }
+                     }
+           }
+        }
+        div.small-items-container{
+            height: 30%;
+            .item{
+                border-radius: 5px;
+                button{
+                   background-color: rgb(7, 1, 87);
+                   color: rgb(248, 245, 244);
+                   font-size: 0.8rem;
+                   border-radius: 20px;
+                }
+                img{
+                    filter: brightness(70%);
+                    border-radius: 5px;
+                    transition: .2s;
+                    &:hover{
+                       filter: brightness(90%);
+                    }
+                }
+            }
+            .item-1{
+               background-color: rgb(215, 227, 252);
+            }
+            .item-2{
+               background-color: rgb(184, 248, 211);
+            }
+            .item-3{
+               background-color: rgb(245, 198, 198);
+            }
+        }
+     }
+
+#first-section{
+   div.header{
+         height: 50px;
+       div.image-icon{
+           img{
+                height: 50px;
+                width: 100%;
+                @include mobile-responsive(){
+                    height: 40px;
+                }
+           }
+       }
+       p{
+           font-size: 1rem;
+           height: 20px;
+           @include mobile-responsive(){
+              font-size: 0.8rem;
+           }
+       }
+       small{
+           font-size: 0.8rem;
+           height: 20px;
+       }
+       div.center-line{
+            height: 5px;
+            border-radius: 20px;
+            background-color: rgb(229, 230, 231);
+       }
+   }
+   div.content{
+       height: 400px;
+       @include mobile-responsive(){
+            height: 300px;
+       }
+       div.image-container{
+           div.card{
+               img{
+                     filter: brightness(50%);
+               }
+               div.card-img-overlay{
+                    div.card-body{
+                        .card-title{
+                            font-size: 2rem;
+                            @include mobile-responsive(){
+                                font-size: 1.5rem;
+                            }
+                        }
+                        button.btn{
+                           font-size: 1rem;
+                           border-radius: 30px;
+                        }
+                    }
+               }
+           }
+       }
+       .form-container{
+             border: 5px solid rgb(218, 215, 215);
+             background-color: rgb(255, 255, 255);
+             h4{
+                  font-size: 1.7rem;
+                  color: rgb(99, 99, 99);
+                  @include mobile-responsive(){
+                     font-size: 1.2rem;
+                  }
+             }
+             form{
+                font-size: 1rem;
+             }
+             button.btn{
+                 font-size: 1rem;
+                 border-radius: 30px;
+                 background-color: rgb(245, 72, 4);
+                 color: rgb(247, 246, 250);
+                 letter-spacing: 1px;
+                 width: 50%;
+                 @include mobile-responsive(){
+                   width: 80%;
+                   margin-bottom: 20px;
+                 }
+             }
+       }
+   }
+
+}
+#second-section{
+   margin-top: 5rem;
+   @include mobile-responsive(){
+      margin-top: 500px;
+   }
+   div.header{
+        height: 40px;
+        h4{
+            font-size: 1.3rem;
+            height: 30px;
+            @include mobile-responsive{
+               font-size: 1rem;
+            }
+        }
+        div{
+           height: 8px;
+           border-radius: 30px;
+           background-color: rgb(194, 191, 191);
+        }
+   }
+   div.product-container{
+       div.col-12{
+         @include mobile-responsive(){
+            margin-top: 1rem;
+         }
+       }
+       div.card{
+           height: 400px;
+           transition: .2s;
+           &:hover{
+              box-shadow: 5px 5px 6px rgb(215, 212, 221),
+                         -5px -5px 6px rgb(225, 225, 226);
+                         transform: translateY(-10px);
+                        
+                         @include mobile-responsive(){
+                            box-shadow: 2px 2px 4px rgb(194, 191, 191),
+                                        -2px -2px 4px rgb(194, 191, 191);
+                                        transform: translateY(-4px);
+                         }
+           }
+           img{
+                height: 250px;
+           }
+           div.card-body{
+               .card-title{
+                   font-size: 0.8rem;
+                   color: rgba(80, 78, 78, 0.7);
+               }
+               .card-text{
+                    font-size: 1.1rem;
+                    color: rgba(56, 55, 55, 0.9);
+               }
+           }
+           div.card-footer{
+               p{
+                  font-size: 0.9rem;
+                  color: rgb(90, 89, 89);
+               }
+           }
+       }
+   }
+}
+
+section.service-section{
+    div.header{
+        div.row{
+             height: 40px;
+        h4{
+            font-size: 1.3rem;
+            height: 30px;
+            color: rgb(167, 166, 166);
+            @include mobile-responsive{
+               font-size: 0.8rem;
+            }
+        }
+        div{
+           height: 8px;
+           border-radius: 30px;
+           background-color: rgb(194, 191, 191);
+        }
+      }
+      p{
+          font-size: 0.8rem;
+          color: rgb(167, 166, 166);
+
+      }
+    }
+    div.content{
+        div.row{
+            div.service-body{
+                   height: 200px;
+                   width: 100%;
+                   position: relative;
+                div.service-image{
+                 position: absolute;
+                 top: 0;
+                 left: 0;
+                 filter: brightness(90%);
+                 transition: .2s;
+                   background: {
+                      repeat:no-repeat,no-repeat;
+                      size:100% 100%, 100% 100%;
+                   };
+                     span{
+                         height: 5px;
+                         width: 20px;
+                         background-color: rgb(253, 253, 255);
+                     }
+                   p{
+                       font-size: 1.2rem;
+                       color: rgb(254, 255, 254);
+                       @include mobile-responsive(){
+                           font-size: 1rem;
+                       }
+                   }
+                }
+                div.service-image-1{
+                     background: {
+                      image :url('./alibaba-images/new5.jpg'),
+                             linear-gradient(45deg , rgb(94, 92, 92),rgb(148, 146, 146));
+                     }
+                }
+                div.service-image-2{
+                     background: {
+                      image :url('./alibaba-images/new6.jpg'),
+                             linear-gradient(45deg , rgb(94, 92, 92),rgb(148, 146, 146));
+                     }          
+                }
+                 div.service-image-3{
+                     background: {
+                      image :url('./alibaba-images/new7.jpg'),
+                             linear-gradient(45deg , rgb(94, 92, 92),rgb(148, 146, 146));
+                     }
+                 }
+                  div.service-image-4{
+                     background: {
+                      image :url('./alibaba-images/alibaba4.png'),
+                             linear-gradient(45deg , rgb(94, 92, 92),rgb(148, 146, 146));
+                     }
+               }
+                
+                div.service-content{
+                    position: relative;
+                    top: 0;
+                    left: 0;
+                    z-index: 8;
+                    opacity: 0;
+                    background: {
+                       image :linear-gradient(90deg ,rgba(0,0,0,0.7),rgba(0,0,0,0.9));
+                    };
+                    transition: .4s;
+                    &:hover{
+                       cursor: pointer;
+                    }
+                    h6{
+                       font-size: 1rem;
+                    }
+                    ul{
+                       li{
+                           font-size: 1rem;
+                           font-weight: bold;
+                           color: rgb(218, 215, 215);
+                           list-style-position: inside;
+                           transition: .2s;
+                           &:hover{
+                               color: rgb(9, 204, 19);
+                           }
+                       }
+                    }
+                    p{
+                       font-size: 1rem;
+                       color: rgb(225, 225, 226);
+                       letter-spacing: 1px;
+                       font-weight: bold;
+                       transition: .2s;
+                       &:hover{
+                           color: rgb(245, 72, 4);
+                       }
+                    }
+                }
+
+            }
+            div.service-footer{
+             background-color: rgb(253, 254, 255);
+                p{
+                   font-size: 1.1rem;
+                }
+                span{
+                   font-size: 0.9rem;
+                   color: rgb(99, 99, 99);
+                }
+                .fa-battle-net,.fa-cc-apple-pay,.fa-crown,.fa-plane{
+                   font-size: 2rem;
+                   color: rgb(235, 13, 105);
+                   text-align: right;
+                   @include mobile-responsive(){
+                      font-size: 1.3rem;
+                   }
+                }
+                span.fa-cc-apple-pay{
+                   color: rgb(245, 161, 4);
+
+                }
+                span.fa-crown{
+                    color: rgb(4, 219, 69);
+                }
+                span.fa-plane{
+                    color: rgb(148, 98, 248);
+                }
+            }
+        }
+    }
+}
+
+.suppliers-region-container{
+   div.suppliers-region{
+        div.header{
+                    height: 40px;
+        h4{
+            font-size: 1.2rem;
+            height: 30px;
+            color: rgb(167, 165, 165);
+            @include mobile-responsive{
+               font-size: 0.8rem;
+            }
+        }
+                    div{
+                         height: 6px;
+                         border-radius: 30px;
+                         background-color:rgb(245, 72, 4);
+                   }
+           }
+           div.body{
+                .col{
+                      margin-top: 1.5rem;
+                     p{
+                      font-size: 0.8rem;
+                      .image{
+                          height: 20px;
+                          width: 35px;
+                          background: {                               
+                                repeat : no-repeat ;
+                                size : 400px 400px;                                 
+                          };
+                      }
+                      span.image-1{
+                             background: {
+                                  image : url('./alibaba-images/countriesFlag.jpg') ;
+                                  position:-300px -20px ;
+                             };
+                      }
+                      span.image-2{
+                             background: {
+                                  image : url('./alibaba-images/countriesFlag.jpg') ;
+                                  position:-20px -65px ;
+                             };
+                      }
+                      span.image-3{
+                             background: {
+                                  image : url('./alibaba-images/countriesFlag.jpg') ;
+                                  position:-20px -110px ;
+                             };
+                      }
+                      span.image-4{
+                             background: {
+                                  image : url('./alibaba-images/countriesFlag.jpg') ;
+                                  position:-117px -110px ;
+                             };
+                      }
+                      span.image-5{
+                             background: {
+                                  image : url('./alibaba-images/countriesFlag.jpg') ;
+                                  position:-153px -65px ;
+                             };
+                      }
+                      span.image-6{
+                             background: {
+                                  image : url('./alibaba-images/countriesFlag.jpg') ;
+                                  position:-20px -155px ;
+                             };
+                      }
+                      span.image-7{
+                             background: {
+                                  image : url('./alibaba-images/countriesFlag.jpg') ;
+                                  position:-160px -330px ;
+                             };
+                      }
+                      strong{
+                          color: rgb(85, 83, 83);
+                          letter-spacing: 1px;
+                          font-weight: normal;
+                          transition: .2s;
+                          &:hover{
+                              color: rgb(245,72,4);
+                              cursor: pointer;
+                          }
+                      }
+                  }
+                }
+           }        
+      }
+   }
+footer{
+      background-color: rgba(21, 20, 44,0.8);
+      p{
+          font-size: 0.9rem;
+      }
+      form{
+          button{
+               @include mobile-responsive(){
+                    display: block;     
+                    width: 200px;
+                    margin: auto;
+                    margin-top: 1rem;
+               }
+          }           
+      }
+      p.email-text{
+             font-size: 0.7rem;
+          }
+         div.row{
+              h4{
+                  font-size: 1rem;
+              }
+              ul{
+                 list-style: none;
+                 li{
+                     list-style-position: inside;
+                     font-size: 0.8rem;
+                     padding: 0;
+                     color: rgb(194, 191, 191);
+                     transition: .2s;
+                     &:hover{
+                         color: rgb(231, 242, 248);
+                         opacity: 1;
+                         cursor: pointer;
+                     }
+                 }
+              }
+         }
+         div.social-media{
+              strong{
+                  font-size: 0.9rem;
+                  font-weight: 500;
+                  padding: 0;
+              }
+              span{
+                  color: rgb(236, 247, 250); 
+                  font-size: 1.3rem;
+                  padding: 0;
+                  display: inline-block;
+                  overflow: hidden;
+                  margin-left: 10px;
+              }
+              span.fa-facebook{
+                  color: rgb(30, 9, 155);
+                  background: rgb(139, 138, 138);
+                  border-radius: 50%;
+              }
+              span.fa-twitter{
+                  color: rgb(70, 43, 224);
+              }
+              span.fa-linkedin{
+                  color: rgb(70, 43, 224);
+                  background-color: rgb(215, 227, 252);
+              }
+              span.fa-youtube{
+                  color: rgb(100, 8, 248);
+              }
+         }
+         .apple{
+             height: 32px;
+             width: 104px;
+             border-radius: 5px;
+             background: {
+                image: url('./alibaba-images/store.png');
+                repeat:no-repeat;
+                size:300px 150px;
+                position: -35px -80px ;
+             };
+             transition: .2s;
+             &:hover{
+                filter: brightness(70%);
+             }
+         }
+     .android{
+             height: 32px;
+             width: 114px;
+             border-radius: 5px;
+             background: {
+                image: url('./alibaba-images/store.png');
+                repeat:no-repeat;
+                size:300px 150px;
+                position: -150px -80px ;
+             };
+             transition: .2s;
+             &:hover{
+                filter: brightness(70%);
+             }
+         }
+         p.text{
+             font-size: 0.8rem;
+             &:hover{
+                cursor: pointer;
+             }
+             @include mobile-responsive(){
+                 font-size: 0.7rem;
+             }
+         }
+         .mobile-navigation{
+         opacity: 1;
+            .row{
+               position: fixed;
+               bottom: -3px;
+               z-index: 99;
+               background-color: rgb(250, 250, 250);
+                .home{
+                    color: rgb(245,72,4);
+                }
+                i{
+                    font-size: 1.3rem;
+                }
+                span{
+                   font-size: 0.7rem;
+                }
+            }
+         }
+}

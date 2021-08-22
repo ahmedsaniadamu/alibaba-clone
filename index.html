@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en-NG">
+<head>
+  <title>Alibaba homepage clone</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Best E-commerce store. for shopiping and delivery worldwide">
+    <meta name = "author" content="AHMED SANI ADAMU">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- boostrap 4 CDN   -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+ <!-- google font -->
+ <link rel="stylesheet"   href="https://fonts.googleapis.com/css?family=Play|Teko">
+
+<!-- custom style sheet  -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <nav class="w-100 p-0 m-0 bg-white fixed-top ">
+      <div  class="row w-100 m-0 mx-auto p-0 justify-content-center justify-content-md-start border-bottom pb-4">
+        
+         <div class="col-5 col-md-3 col-lg-2 p-0 m-0 ">
+           <img src="./alibaba-images/alibaba20.png" alt="alibaba logo" class="logo w-100 m-0 p-0 ">
+         </div>
+         <div class="col-12 col-md-5 col-lg-6 mt-1 mt-md-0 nav-input-container align-self-end">
+             
+             <div class="input-group">
+                    <div class="input-group-prepend">
+                      <button type="button" class=" px-2 product-btn dropdown-toggle" data-toggle="dropdown">
+                                     products
+                           </button>
+                              <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Products</a>
+                                         <a class="dropdown-item" href="#">Suppliers</a>
+                             </div>
+                      </div>
+                      <input type="text" class="form-control border-0 outline-0" 
+                         placeholder="what are you looking for...">
+
+                  <div class="input-group-append">
+                        <button class="fas fa-camera  "data-toggle="tooltip" title="search by image">
+                        </button>
+                       <button type="button" class=" border-0 search-btn px-md-4"> 
+                                    <strong> &#128269 </strong> search 
+                        </button>
+                  </div>
+           </div>
+         </div>
+         <div class=" col-md-4 col-lg-4 mt-1 mt-md-0  align-self-end d-none d-md-block  p-0 ">
+             <div class="row p-0 m-0 w-100 mx-auto  nav-item-container ">
+                  <div class="col-3 p-0 m-0 ">
+                     <div class="row w-100 h-100 p-0 m-0 mx-auto align-items-end justify-content-center ">
+                        <span class="col-7 col-lg-4 fas fa-user text-center p-0 m-0 sign-up "></span>
+                        <p class="col-12 p-0 m-0  text-center ">  Sign in </p>
+                     </div>
+                 </div>
+                 <div class="col-3 p-0 m-0 ">
+                     <div class="row w-100 h-100 p-0 m-0 mx-auto align-items-end justify-content-center">
+                        <span class="col-7 col-lg-4 fas fa-crown text-center p-0 m-0 orders"></span>
+                        <p class="col-12 p-0 m-0  text-center  ">  Orders </p>
+                     </div>
+                 </div>
+                 <div class="col-3 p-0 m-0">
+                     <div class="row w-100  p-0 m-0 h-100 mx-auto align-items-end justify-content-center">
+                        <span class="col-7 col-lg-4 fas fa-envelope text-center p-0 m-0 messages"></span>
+                        <p class="col-12 p-0 m-0  text-center"> Messages </p>
+                     </div>
+                 </div>  
+                 <div class="col-3 p-0 m-0">
+                     <div class="row w-100 p-0 m-0 h-100 mx-auto align-items-end">
+                        <span class="col-12 fas fa-cart-arrow-down text-center p-0 m-0"></span>
+                        <p class="col-12 p-0 m-0 pt-1 text-center">  Cart </p>
+                     </div>
+                 </div>                
+             </div>
+         </div>
+      </div>
+      <!--  dropdown menu. for signin , orders  ,  -->
+      <div class="dropdown-menu-container w-100 p-0 m-0">
+         <!-- for sign up -->
+                 <div class="sign-up-dropdown-menu shadow-sm rounded">
+                     <h4 class="display-5 pt-2 pb-4 text-center font-weight-bold">Get started now</h4>
+                     <button class="btn w-75 py-1 mx-auto d-block rounded-lg "> Sign in </button>
+                     <p class="pt-3 pb-4 m-0 text-center">or</p>
+                     <p class="pb-1 p-0 m-0 text-center">Join free</p>
+                     <p class="p-0  m-0 text-center"><small>continue with :</small></p>
+                     <div class="social-media d-flex w-100 justify-content-around p-0 mt-3 m-0 ">
+                         <span class="fab fa-facebook "></span>
+                         <span class="fab fa-twitter"></span>
+                         <span class="fab fa-linkedin"></span>
+                         <span class="fab fa-google-plus"></span>
+                     </div>
+                     <hr>
+                     <div class="w-100 pt-4 pl-3">
+                          <input type="checkbox" name="user-agreement" id="agreemnt" checked> 
+                          <label for="agreemnt font-weight-bold">I agree to</label>
+                          <p class=" p-0 m-0 text-muted"> <small>free membership agreement</small></p>
+                     </div>
+                      <div class="w-100 pt-1 pl-3">
+                          <input type="checkbox" name="user-agreement" id="agreemnt" checked> 
+                          <label for="agreemnt font-weight-bold">I agree to</label>
+                          <p class=" text-muted m-0 p-0"> <small>free marketing materials</small></p>
+                     </div>
+                     <h4 class="header text-dark py-2 pl-2 m-0 mt-3 border-top border-secondary">
+                                     My alibaba <small class="text-muted">  > </small>
+                      </h4>
+                          <ul class="list-group m-0 w-100 pt-2 border-0 bg-transparent">
+                             <li class="list-group-item p-0 m-0 border-0 bg-transparent">Manage RFQ</li>
+                             <li class="list-group-item p-0 m-0 border-0 bg-transparent">My Orders</li>
+                             <li class="list-group-item p-0 m-0 border-0 bg-transparent">My Favorite</li>
+                             <li class="list-group-item p-0 m-0 border-0 bg-transparent">My account</li>
+                             <hr>
+                             <li class="list-group-item p-0 m-0 border-0 bg-transparent">submit RFQ</li>                             
+                             <hr>                                                                                       
+                          </ul>                     
+                 </div>
+                     <!-- for orders -->
+                 <div class="orders-dropdown-menu shadow-sm rounded">
+                     <h4 class="display-5 pt-2 pb-4 text-center font-weight-bold">Unread message reminder</h4>
+                      <p class="px-3">
+                                        We will remind you here when there is new message.
+                                         Please log in to view.
+                      </p>   
+                      <button class="btn w-75 py-1 mx-auto d-block  "> Sign in </button>  
+                      <p class="mt-4"><small class="small text-muted">New user? Please 
+                                                       <span class="text-primary font-weight-bold"> register </span> 
+                                                       and start your business!</small>
+                      </p>           
+                 </div>    
+      </div>
+    <div class="container-fluid m-0 p-0 d-none d-lg-block sub-menu">
+       <div class="d-flex w-100 p-0 m-0 mx-auto py-2 flex-nowrap">
+           <div> <span class="fas fa-bars"></span> Categories</div>
+           <div> Trade Shows</div>
+           <div>Ready to ship</div>
+           <div class="large-item">Personal protective equipment</div>
+           <div>Buyer central</div>
+           <div>Sell on alibaba</div>
+           <div>Help</div>
+           <div class="english">English <span class="fas fa-caret-down"></span></div>
+           <div class="ship-to">ship to : <span class="nigeria"></span></div>                                                                  
+        </div>
+    </div>
+    <div class="dropdown-item-container">
+           <div class="language-dropdown-menu rounded">
+              <h4 class="font-weight-normal py-3"> Regional setting</h4>
+              <p class=" py-3 pl-2">language</p>
+
+              <div class="d-flex justify-content-center align-items-center">
+                   <div class="spinner spinner-border text-danger"></div>
+              </div>
+              <p class=" py-3 pl-2">Currency</p>
+              <div class="d-flex justify-content-end align-items-center">
+                   <button class="btn font-weight-bold px-4 py-1 mr-2 mb-3"> Save</button>
+              </div>
+           </div>
+           <div class="ship-to-dropdown-menu px-2 rounded">
+            <h4 class="text-center mt-2">choose your location</h4>
+              <p class="px-2 pt-3">Delivery options and fees may vary based on your locations</p>
+              <button class="btn my-2 mx-auto d-block py-1">Sign in to see your address</button>
+               <!-- divider with text at the center-->
+                <div class="d-flex align-items-center my-3">
+                    <div class="center-line"></div>
+                    <div class="center-text text-center">or</div>
+                    <div class="center-line"></div>
+                </div>
+                <div class="select-country w-100 mt-4 d-flex justify-content-between p-1">
+                   <div class="col-5 country-list"> <span></span>  Nigeria</div>
+                   <div class="col-2 text-right"><i class="fas fa-caret-down text-muted"></i></div>
+                </div>
+                 <input type="text" placeholder="Enter a city or zip" name="city" class="p-1 my-4 w-100 m-0 bg-transparent city">
+                 <div class="d-flex justify-content-center my-3">
+                    <button class="btn w-50 py-1"> Save</button>
+                 </div>
+           </div>
+    </div>
+  </nav>
+
+  <!--***********************************************-->
+
+  <header class="w-100  p-0 ">
+        <div class="container border py-4 ">
+             <div class="row p-0 pb-3 m-0 mx-auto">
+                   <div class="col-12 col-md-4">
+                      <h4 class=" py-1 pl-2 mx-2 font-weight-bold border-bottom "> MY MARKETS</h4>                   
+                       <ul class="list-group bg-transparent p-0 m-0 border-0">
+                           <li class="list-group-item  bg-transparent p-0 w-100 border-0 ">
+                              <div class="row p-0 m-0 w-100 mx-auto justify-content-between">
+                                   <div class="col-2"><span class="electronics"></span></div>
+                                  <p class="col-8 pt-2">  Consumer Electronics</p>
+                                   <i class="col-2 pt-2 fas fa-angle-right text-right"></i>
+                               </div>
+                           </li>
+                            <li class="list-group-item  bg-transparent p-0 w-100 border-0 ">
+                              <div class="row p-0 m-0 w-100 mx-auto justify-content-between">
+                                   <div class="col-2"><span class="apparel"></span></div>
+                                  <p class="col-8 pt-2"> Apparel</p>
+                                   <i class="col-2 pt-2 fas fa-angle-right text-right"></i>
+                               </div>
+                           </li>
+                           <li class="list-group-item  bg-transparent p-0 w-100 border-0 ">
+                              <div class="row p-0 m-0 w-100 mx-auto justify-content-between">
+                                   <div class="col-2"><span class="vehicle"></span></div>
+                                  <p class="col-8 pt-2">Vehicle and Accessories</p>
+                                   <i class="col-2 pt-2 fas fa-angle-right text-right"></i>
+                               </div>
+                           </li>
+                           <li class="list-group-item  bg-transparent p-0 w-100 border-0 ">
+                              <div class="row p-0 m-0 w-100 mx-auto justify-content-between">
+                                   <div class="col-2"><span class="sports"></span></div>
+                                  <p class="col-8 pt-2">Sports and Entertainment</p>
+                                   <i class="col-2 pt-2 fas fa-angle-right text-right"></i>
+                               </div>
+                           </li>
+                           <li class="list-group-item  bg-transparent p-0 w-100 border-0 ">
+                              <div class="row p-0 m-0 w-100 mx-auto justify-content-between">
+                                   <div class="col-2"><span class="machinery"></span></div>
+                                  <p class="col-8 pt-2"> Machinery</p>
+                                   <i class="col-2 pt-2 fas fa-angle-right text-right"></i>
+                               </div>
+                           </li>
+                           <li class="list-group-item  bg-transparent p-0 w-100 border-0 ">
+                              <div class="row p-0 m-0 w-100 mx-auto justify-content-between">
+                                   <div class="col-2"><span class="home"></span></div>
+                                  <p class="col-8 pt-2">  Home and Garden</p>
+                                   <i class="col-2 pt-2 fas fa-angle-right text-right"></i>
+                               </div>
+                           </li>
+                           <li class="list-group-item  bg-transparent p-0 w-100 border-0 ">
+                              <div class="row p-0 m-0 w-100 mx-auto justify-content-between">
+                                   <div class="col-2"><span class="beauty"></span></div>
+                                  <p class="col-8 pt-2">  Beauty and Personal Care</p>
+                                   <i class="col-2 pt-2 fas fa-angle-right text-right"></i>
+                               </div>
+                           </li>
+                           <li class="list-group-item  bg-transparent p-0 w-100 border-0 ">
+                              <div class="row p-0 m-0 w-100 mx-auto justify-content-between">
+                                   <div class="col-2"><span class="categories"></span></div>
+                                  <p class="col-8 pt-2"> All Categories</p>
+                                   <i class="col-2 pt-2 fas fa-angle-right text-right"></i>
+                               </div>
+                           </li>                           
+                       </ul>
+                   </div>
+                   <div class="col-12 col-md-8  px-0 py-0">
+                         <div class="row w-100 mx-auto h-100  py-0">
+                            <div class="col-12 p-0 m-0  banner">
+                                  <div id="demo" class="carousel slide" data-ride="carousel">
+                                             <!-- Indicators -->
+                                         <ul class="carousel-indicators">
+                                               <li data-target="#demo" data-slide-to="0" class="active"></li>
+                                               <li data-target="#demo" data-slide-to="1"></li>
+                                               <li data-target="#demo" data-slide-to="2"></li>
+                                               <li data-target="#demo" data-slide-to="3"></li>
+                                               <li data-target="#demo" data-slide-to="4"></li>
+                                         </ul>
+
+                                                  <!-- The slideshow -->
+                                        <div class="carousel-inner">
+                                              <div class="carousel-item active">
+                                                     <img   src="./alibaba-images/advert6.png"  alt="Los Angeles">
+                                              </div>
+                                              <div class="carousel-item">
+                                                     <img  src="./alibaba-images/alibaba14.png"  alt="Chicago">
+                                              </div>
+                                              <div class="carousel-item">
+                                                    <img src="./alibaba-images/advert5.png" alt="New York">
+                                               </div>
+                                               <div class="carousel-item">
+                                                     <img src="./alibaba-images/alibaba6.png" alt="New York">
+                                               </div>
+                                               <div class="carousel-item">
+                                                    <img src="./alibaba-images/advert.jpg" alt="New York">
+                                               </div>
+                                       </div>
+
+                                         <!-- Left and right controls -->
+                                       <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                                             <span class="carousel-control-prev-icon"></span>
+                                       </a>
+                                        <a class="carousel-control-next" href="#demo" data-slide="next">
+                                            <span class="carousel-control-next-icon"></span>
+                                      </a>
+
+                               </div>
+                            </div>
+                            <div class="col-12 p-0 m-0  small-items-container align-self-end d-none d-md-block">
+                                <div class="row w-100 h-100 mx-auto p-0 m-0 mt-4 justify-content-between">
+                                    <div class="col-3 item item-1 p-0">
+                                         <div class="row m-0 p-0 mx-auto w-100 h-100 justify-content-between">
+                                              <div class="col-8 p-0 pr-1 m-0 h-25 align-self-center">
+                                                 <button class="btn p-1 px-2 m-0 ml-1">Source now</button>
+                                              </div>
+                                              <img class="col-4 pr-1  p-0 h-50 align-self-center m-0" 
+                                              src="./alibaba-images/new2.jpg" alt="alibaba images">
+                                         </div>
+                                    </div>
+                                    <div class="col-3 item item-2 p-0">
+                                         <div class="row m-0 p-0 mx-auto w-100 h-100 justify-content-between">
+                                              <div class="col-8 p-0 pr-1 m-0 h-25 align-self-center">
+                                                 <button class="btn p-1 px-2 m-0 ml-1">Source now</button>
+                                              </div>
+                                              <img class="col-4 pr-1  p-0 h-50 align-self-center m-0" 
+                                              src="./alibaba-images/new3.jpg" alt="alibaba images">
+                                         </div>
+                                    </div>
+                                    <div class="col-3 item item-3 p-0">
+                                         <div class="row m-0 p-0 mx-auto w-100 h-100 justify-content-between">
+                                              <div class="col-8 p-0 pr-1 m-0 h-25 align-self-center">
+                                                 <button class="btn p-1 px-2 m-0 ml-1">Source now</button>
+                                              </div>
+                                              <img class="col-4 pr-1  p-0 h-50 align-self-center m-0"
+                                               src="./alibaba-images/new4.jpg" alt="alibaba images">
+                                         </div>
+                                    </div>                                     
+                                </div>
+                            </div>
+                         </div>
+                   </div>
+             </div>
+        </div>
+  </header>
+
+  <section class="container-fluid m-0 p-0 mt-5" id="first-section">
+        <div class="container p-0">
+              <div class="row w-100 p-0 m-0 mx-auto header ">
+                 <div class="col-2 col-md-2 col-lg-1 image-icon p-0 pl-2 pl-md-0">
+                      <img src="./alibaba-images/new1.png" alt="logo image" class="rounded ">
+                 </div>
+                 <p class="col-5 col-md-3 col-lg-3 font-weight-bold p-0  align-self-start align-self-md-center m-0 text-center">
+                      REQUEST FOR QOUTATION
+                </p>
+                 <small class="col-5 col-md-3 col-lg-2  p-0 text-muted  align-self-center text-center">
+                         Customization service
+                 </small>
+                 <div class="center-line d-none d-md-block col-md-4 col-lg-6 align-self-center"></div>
+              </div>
+              <div class="content row w-100 p-0 m-0 mx-auto mt-5">
+                     <div class="col-12 col-md-6 image-container">
+                         <div class="card w-100 p-0 m-0 h-100 border-0 ">
+                             <img src="./alibaba-images/alibaba7.png" alt="alibaba-images" class="card-img-top w-100 h-100 m-0 p-0">
+                             <div class="card-img-overlay">
+                                <div class="card-body mt-5">
+                                   <h4 class="card-title font-weight-bold text-white"> Global Sourcing Marketplace.</h4>
+                                   <button class="btn btn-outline-light px-4">Source now</button>
+                                </div>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="col-12 col-md-6 form-container mt-5 mt-md-0">
+                        <h4 class="font-weight-bold my-3">One Request, Multiple Quotes</h4>
+                        <form class="mt-5">
+                               <div class="row">
+                                         <div class="col-12 col-md-12">
+                                              <input type="search" class="form-control" placeholder="what are you looking for..." name="search">
+                                           </div>
+                                         <div class="col-12 col-md-6 mt-5">
+                                               <input type="text" class="form-control" placeholder="Quantity" name="quantity">
+                                         </div>
+                                         <div class="col-12 col-md-6 mt-5">
+                                             <div class="input-group">
+                                                  <input type="text" class="form-control border-right-0" id="check" placeholder="piece/pieces">
+                                                  <div class="input-group-append">
+                                                  <label for="check" class=" btn dropdown-toggle border border-left-0" data-toggle="dropdown">   
+                                                   </label>
+                                                    <div class="dropdown-menu">
+                                                          <a class="dropdown-item" href="#">浙公网安备</a>
+                                                          <a class="dropdown-item" href="#">more</a>
+                                                    </div>
+                                                  </div>
+                                             </div>                             
+                                         </div>
+                              </div>
+                               <button type="button" class="btn d-block mx-auto mt-5 font-weight-bold">
+                                    Request for Quotation
+                              </button>
+                       </form>
+                     </div>
+              </div> 
+        </div>
+  </section>
+  <section id="second-section" class="p-0  container">
+      <div class="header row p-0 m-0 mx-auto w-100 align-items-center">
+          <h4 class="col-5 col-md-3  col-lg-2 font-weight-bold p-0 m-0 pt-1 pl-2 pl-md-0">JUST FOR YOU</h4>
+          <div class="col-7 col-md-9 col-lg-10 p-0 m-0"></div>
+      </div>
+      <div class="product-container  row w-100 m-0 mt-1 p-0 mx-auto">
+          <div class="col-12 col-md-4 col-lg-3  m-0 mt-4 mt-md-0 p-1 pt-4"> 
+                <div class="card border-0 m-0 p-0">
+                      <img src="./alibaba-images/alibaba11.png" alt="alibaba product" class="card-img-top w-100 p-0 m-0">
+                      <div class="card-body">
+                         <h6 class="card-title p-0 m-0">
+                                2021 Popular Stainless Saucepan High Quality Pot Cookware With Strainer Lid
+                        </h6>
+                         <p class="card-text pt-2 pb-0 m-0 font-weight-bold">₦2,882.15 - ₦4,117.36</p>
+                      </div>
+                      <div class="card-footer bg-transparent border-0 py-0 m-0">
+                         <p class="py-0 m-0 ">100.0 Sets (Min. Order)</p>
+                      </div>
+                </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-3 m-0 mt-4 mt-md-0  p-1 pt-4"> 
+                <div class="card border-0 m-0 p-0">
+                      <img src="./alibaba-images/alibaba18.png" alt="alibaba product" class="card-img-top w-100 p-0 m-0">
+                      <div class="card-body">
+                         <h6 class="card-title p-0 m-0">
+                                Factory Direct Selling Products Luxury Bridal Wholesale Lace Fabric L00398AN.A
+                        </h6>
+                         <p class="card-text pt-2 pb-0 m-0 font-weight-bold">₦7,882.15 - ₦4,117.36</p>
+                      </div>
+                      <div class="card-footer bg-transparent border-0 py-0 m-0">
+                         <p class="py-0 m-0 ">100.0 Sets (Min. Order)</p>
+                      </div>
+                </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-3 m-0 mt-4 mt-md-0 p-1 pt-4"> 
+                <div class="card border-0 m-0 p-0">
+                      <img src="./alibaba-images/alibaba12.png" alt="alibaba product" class="card-img-top w-100 p-0 m-0">
+                      <div class="card-body">
+                         <h6 class="card-title p-0 m-0">
+                                Brand New Apple iPhone Glass iphone display LCD
+                                 Factory direct sales cheap Completely Touch Screen display for iphone 7 plus 7 6
+                        </h6>
+                         <p class="card-text pt-2 pb-0 m-0 font-weight-bold">₦864.65 - ₦5,348.45</p>
+                      </div>
+                      <div class="card-footer bg-transparent border-0 py-0 m-0">
+                         <p class="py-0 m-0 ">10 meters (Min. Order)</p>
+                      </div>
+                </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-3 m-0 mt-4 mt-md-0 p-1 pt-4"> 
+                <div class="card border-0 m-0 p-0">
+                      <img src="./alibaba-images/alibaba13.png" alt="alibaba product" class="card-img-top w-100 p-0 m-0">
+                      <div class="card-body">
+                         <h6 class="card-title p-0 m-0">
+                             Best Seller of Chapati Making Machine Fully Automatic for Export   
+                        </h6>
+                         <p class="card-text pt-2 pb-0 m-0 font-weight-bold">₦6,882.15</p>
+                      </div>
+                      <div class="card-footer bg-transparent border-0 py-0 m-0">
+                         <p class="py-0 m-0 ">100.0 Sets (Min. Order)</p>
+                      </div>
+                </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-3 m-0 mt-4 mt-md-0 p-1 pt-4"> 
+                <div class="card border-0 m-0 p-0">
+                      <img src="./alibaba-images/alibaba17.png" alt="alibaba product" class="card-img-top w-100 p-0 m-0">
+                      <div class="card-body">
+                         <h6 class="card-title p-0 m-0">
+                               Elegant Chiffon Ziad Germanos Draped One Shoulder Tiered Cascading Skirt Formal Gown
+                        </h6>
+                         <p class="card-text pt-2 pb-0 m-0 font-weight-bold">₦6,171.92</p>
+                      </div>
+                      <div class="card-footer bg-transparent border-0 py-0 m-0">
+                         <p class="py-0 m-0 ">25 Cases (Min. Order)</p>
+                      </div>
+                </div>
+          </div>  
+          <div class="col-12 col-md-4 col-lg-3 m-0 mt-4 mt-md-0 p-1 pt-4"> 
+                <div class="card border-0 m-0 p-0">
+                      <img src="./alibaba-images/alibaba10.png" alt="alibaba product" class="card-img-top w-100 p-0 m-0">
+                      <div class="card-body">
+                         <h6 class="card-title p-0 m-0">
+                              KE-CEX series solar charge controller pv controller 50A 60A MPPT 650w 1kw 2kw 3kw
+                        </h6>
+                         <p class="card-text pt-2 pb-0 m-0 font-weight-bold">₦2,882.15 - ₦4,117.36</p>
+                      </div>
+                      <div class="card-footer bg-transparent border-0 py-0 m-0">
+                         <p class="py-0 m-0 ">100.0 Sets (Min. Order)</p>
+                      </div>
+                </div>
+          </div>  
+          <div class="col-12 col-md-4 col-lg-3 m-0 mt-4 mt-md-0 p-1 pt-4"> 
+                <div class="card border-0 m-0 p-0">
+                      <img src="./alibaba-images/alibaba8.png" alt="alibaba product" class="card-img-top w-100 p-0 m-0">
+                      <div class="card-body">
+                         <h6 class="card-title p-0 m-0">
+                                2021 Popular Stainless Saucepan High Quality Pot Cookware With Strainer Lid
+                        </h6>
+                         <p class="card-text pt-2 pb-0 m-0 font-weight-bold">₦2,882.15 - ₦4,117.36</p>
+                      </div>
+                      <div class="card-footer bg-transparent border-0 py-0 m-0">
+                         <p class="py-0 m-0 ">100.0 Sets (Min. Order)</p>
+                      </div>
+                </div>
+          </div>  
+          <div class="col-12 col-md-4 col-lg-3 m-0 mt-4 mt-md-0 p-1 pt-4"> 
+                <div class="card border-0 m-0 p-0">
+                      <img src="./alibaba-images/alibaba5.png" alt="alibaba product" class="card-img-top w-100 p-0 m-0">
+                      <div class="card-body">
+                         <h6 class="card-title p-0 m-0">
+                                2021 Popular Stainless Saucepan High Quality Pot Cookware With Strainer Lid
+                        </h6>
+                         <p class="card-text pt-2 pb-0 m-0 font-weight-bold">₦2,882.15 - ₦4,117.36</p>
+                      </div>
+                      <div class="card-footer bg-transparent border-0 py-0 m-0">
+                         <p class="py-0 m-0 ">100.0 Sets (Min. Order)</p>
+                      </div>
+                </div>
+          </div>                                        
+      </div>
+  </section>
+
+<section class="service-section container p-0">
+    <div class="header mt-5 m-0 p-0">
+       <div class="row w-100 p-0 m-0 mx-auto align-items-center">
+           <h4 class="col-9 col-md-5  col-lg-5 font-weight-bold p-0 m-0 pt-2 pt-md-1">
+              OUR TRADE SERVICES ARE HERE FOR YOU
+           </h4>
+          <div class="col-3 col-md-7 col-lg-7 p-0 m-0"></div>
+       </div>
+       <p class="mt-3">Alibaba.com's trade services help and ensure that your purchases are protected.</p>
+    </div>
+    <div class="content m-0 p-0">
+        <div class="row w-100 p-0 m-0 mx-auto mt-3" >
+ <div class="col-12 col-md-6 mt-4 pl-1 pl-md-0">
+                 <div class="service-body">
+                      <div class="service-image service-image-1 w-100 h-100 p-0 m-0 pt-5 pl-2">
+                         <span class="d-inline-block mt-3"></span>
+                         <p class="p-1">
+                           Trade assurance is a free order protection service
+                            offered by alibaba.com
+                         </p>
+                      </div>
+                      <div class="service-content w-100 h-100 p-0 m-0">
+                         <h6 class=" text-white  mb-5 p-3 font-weight-bold"> benefits</h6>
+                            <ul>
+                               <li class="pl-2 ml-2"> One time shipping</li>
+                               <li class="pl-2 ml-2"> Quality protection</li>
+                            </ul>
+                            <p class="ml-2 pt-0 text-right pr-2">learn more.</p>
+                      </div>
+                 </div>
+                 <div class="service-footer w-100 p-0 m-0 mx-auto row justify-content-between">
+                      <div class="col-8 col-md-7 p-0 m-0">
+                          <p class="m-0 font-weight-bold p-0 mt-2">Trade assurace</p> 
+                          <span class="p-0 m-0 d-block pt-2">Order protection</span>
+                      </div>
+                      <div class="col-2 col-md-2 h-50 align-self-center">
+                         <span class="fab fa-battle-net "></span>
+                      </div>
+                      
+                 </div>   
+            </div>                 
+<!--***********************************************-->
+ <div class="col-12 col-md-6 mt-4 pl-1 pl-md-0">
+                 <div class="service-body">
+                      <div class="service-image service-image-2 w-100 h-100 p-0 m-0 pt-5 pl-2">
+                         <span class="d-inline-block mt-3"></span>
+                         <p class="p-1 ">
+                           Fast payment and setllement,suppoerting 6 global card type and 21 local currencies
+                         </p>
+                      </div>
+                      <div class="service-content w-100 h-100 p-0 m-0">
+                         <h6 class=" text-white  mb-3 p-3 font-weight-bold"> benefits</h6>
+                            <ul>
+                               <li class="pl-2 ml-2"> Global online payment</li>
+                               <li class="pl-2 ml-2"> Security Compliance</li>
+                               <li class="pl-2 ml-2">Provide online refund if goods are not shipped</li>
+                            </ul>
+                            <p class="ml-2 pt-0 text-right pr-2">learn more.</p>
+                      </div>
+                 </div>
+                 <div class="service-footer w-100 p-0 m-0 mx-auto row justify-content-between">
+                      <div class="col-8 col-md-7 p-0 m-0">
+                          <p class="m-0 font-weight-bold p-0 mt-2">Payment</p> 
+                          <span class="p-0 m-0 d-block pt-2">Payment Solution</span>
+                      </div>
+                      <div class="col-2 col-md-2 h-50 align-self-center">
+                         <span class="fab fa-cc-apple-pay "></span>
+                      </div>
+                      
+                 </div>   
+            </div> 
+<!--*********************************************-->
+<div class="col-12 col-md-6 mt-4 pl-1 pl-md-0">
+                 <div class="service-body">
+                      <div class="service-image service-image-3 w-100 h-100 p-0 m-0 pt-5 pl-2">
+                         <span class="d-inline-block mt-3"></span>
+                         <p class="p-1">
+                           Production monitoring and inspection services on your alibaba.com trade assuarance order
+                         </p>
+                      </div>
+                      <div class="service-content w-100 h-100 p-0 m-0">
+                         <h6 class=" text-white  mb-3 p-3 font-weight-bold"> benefits</h6>
+                            <ul>
+                               <li class="pl-2 ml-2"> Production monitoring</li>
+                               <li class="pl-2 ml-2"> On-site factory check</li>
+                               <li class="pl-2 ml-2">Reduced risk in delays and product conformity</li>
+                            </ul>
+                            <p class="ml-2 pt-0 text-right pr-2">learn more.</p>
+                      </div>
+                 </div>
+                 <div class="service-footer w-100 p-0 m-0 mx-auto row justify-content-between">
+                      <div class="col-8 col-md-7 p-0 m-0">
+                          <p class="m-0 font-weight-bold p-0 mt-2">Inspection Solution</p> 
+                          <span class="p-0 m-0 d-block pt-2">Inspection</span>
+                      </div>
+                      <div class="col-2 col-md-2 h-50 align-self-center">
+                         <span class="fab fas fa-crown "></span>
+                      </div>
+                      
+                 </div>   
+            </div> 
+<!--*********************************************-->
+<div class="col-12 col-md-6 mt-4 pl-1 pl-md-0">
+                 <div class="service-body">
+                      <div  class="service-image service-image-4 w-100 h-100 p-0 m-0 pt-5 pl-2">
+                         <span class="d-inline-block mt-3 "></span>
+                         <p class="p-1 ml-0 bg-light text-dark">
+                           fast, reliable shipping by occean or air.
+                         </p>
+                      </div>
+                      <div class="service-content w-100 h-100 p-0 m-0">
+                         <h6 class=" text-white  mb-3 p-3 font-weight-bold"> benefits</h6>
+                            <ul>
+                               <li class="pl-2 ml-2"> Fast occean and air shipping</li>
+                               <li class="pl-2 ml-2"> Competative pricing</li>
+                               <li class="pl-2 ml-2">Online traking</li>
+                            </ul>
+                            <p class="ml-2 pt-0 text-right pr-2">learn more.</p>
+                      </div>
+                 </div>
+                 <div class="service-footer w-100 p-0 m-0 mx-auto row justify-content-between">
+                      <div class="col-8 col-md-7 p-0 m-0">
+                          <p class="m-0 font-weight-bold p-0 mt-2">Occean and air shipping</p> 
+                          <span class="p-0 m-0 d-block pt-2">LOGISTIC SERVICE</span>
+                      </div>
+                      <div class="col-2 col-md-2 h-50 align-self-center">
+                         <span class="fas fa-plane "></span>
+                      </div>
+                      
+                 </div>   
+            </div> 
+<!--*********************************************-->
+        </div>
+    </div>
+</section>
+
+<section class="container p-0 mt-5 suppliers-region-container">
+   <div class="suppliers-region p-0 m-0">
+        <div class="row w-100 p-0 m-0 mx-auto align-items-center header mt-3">
+           <h4 class="col-9 col-md-5  col-lg-5 font-weight-bold p-0 m-0 pt-2 pt-md-1">
+              CHOOSE YOUR SUPPLIERS BY REGION
+           </h4>
+          <div class="col-3 col-md-7 col-lg-7 p-0 m-0 pt-0 pt-md-1"></div>
+       </div>
+       <div class="row w-100 p-0 m-0 mx-auto body">
+           <div class="col">
+            <p class="p-0 m-0  d-flex"> 
+                      <span class="d-inline-block image image-1"></span>
+                      <strong class="align-self-center pl-3"> Nigeria</strong></p>
+          </div>
+           <div class="col">
+            <p class="p-0 m-0  d-flex"> 
+                      <span class="d-inline-block image image-2"></span>
+                      <strong class="align-self-center pl-3"> Brasil</strong></p>
+          </div>
+           <div class="col">
+            <p class="p-0 m-0  d-flex"> 
+                      <span class="d-inline-block image image-3"></span>
+                      <strong class="align-self-center pl-3"> USA</strong></p>
+          </div>
+           <div class="col">
+            <p class="p-0 m-0  d-flex"> 
+                      <span class="d-inline-block image image-4"></span>
+                      <strong class="align-self-center pl-3"> S-Korea</strong></p>
+          </div>
+           <div class="col">
+            <p class="p-0 m-0  d-flex"> 
+                      <span class="d-inline-block image image-5"></span>
+                      <strong class="align-self-center pl-3"> Thailand</strong></p>
+          </div>
+           <div class="col">
+            <p class="p-0 m-0  d-flex"> 
+                      <span class="d-inline-block image image-6"></span>
+                      <strong class="align-self-center pl-3"> Japan </strong></p>
+          </div>
+           <div class="col">
+            <p class="p-0 m-0  d-flex"> 
+                      <span class="d-inline-block image image-7"></span>
+                      <strong class="align-self-center pl-3"> India</strong></p>
+          </div>
+           <div class="col">
+            <p class="p-0 m-0  d-flex"> 
+                      <span class="d-inline-block bg-transparent"></span>
+                      <strong class="align-self-center pl-3 text-primary"> More regions</strong></p>
+          </div>
+                                                                                
+       </div>
+   </div>
+</section>
+<footer class="p-0 m-0 w-100 mt-5 pt-5 ">
+        <p class="text-center text-white">
+                     Trade Alert - Delivering the latest product trends
+                      and industry news straight to your inbox.
+        </p>
+        <div class="form-container d-flex justify-content-center">
+                    <form action="#" class="form-inline">
+                            <input type="email" name="mail" class="mx-2 mx-md-0 form-control pl-2 pr-2 pr-md-5 bg-transparent" placeholder="your email.">
+                             <button type="submit" class="btn btn-outline-light px-4 ml-md-3">
+                                   Subscribe
+                             </button>
+                   </form>                  
+        </div>
+        <p class="p-1 text-secondary text-center email-text m-0 mt-2">
+                         We’ll never share your email address with a third-party.
+        </p> 
+        <div class="row w-100 mx-auto justify-content-between justify-content-lg-around  border-bottom border-secondary">
+             <div class="col-6 col-md-3 col-lg-2 mt-3">
+                <h4 class="text-white">Customer Services</h4>
+                <ul class="p-0">
+                     <li>Help center</li>
+                     <li>Contact us</li>
+                     <li>Report abuse</li>
+                      <li>Submit a Dispute</li>
+                     <li>  Policies & Rules </li>
+                     <li> Get Paid for Your Feedback </li>
+                </ul>
+             </div>
+             <div class="col-6 col-md-3 col-lg-2 mt-3">
+                <h4 class="text-white">About Us</h4>
+                <ul class="p-0">
+                     <li>About alibaba.com</li>
+                     <li>About alibaba group</li>
+                     <li>Site map</li>
+                </ul>
+             </div>
+             <div class="col-6 col-md-3 col-lg-2 mt-3">
+                <h4 class="text-white">Source on Alibaba.com</h4>
+                <ul class="p-0">
+                     <li>Resources</li>
+                     <li>All categories</li>
+                     <li>Request for qoutation</li>
+                      <li>Ready to ship</li>
+                     <li>Buyer partners</li>
+                </ul>
+             </div>
+             <div class="col-6 col-md-3 col-lg-2 mt-3">
+                <h4 class="text-white">Sell on alibaba.com</h4>
+                <ul class="p-0">
+                     <li>Supplier Memberships</li>
+                     <li>Learning Center</li>
+                     <li>Partner Program</li>
+                </ul>
+             </div>
+             <div class="col-6 col-md-3 col-lg-2 mt-3">
+                <h4 class="text-white">Trade Services</h4>
+                <ul class="p-0">
+                     <li>Trade Assurance</li>
+                     <li>Business Identity</li>
+                     <li>Logistics Service</li>
+                      <li>Production Monitoring & Inspection Services</li>
+                     <li> Letter of Credit </li>
+                </ul>
+             </div>                                                    
+        </div>
+    <div class="container mt-2 social-media"> 
+       <div class="row w-100 mx-auto justify-content-between">
+            <div class="col-12 col-md-5 mt-3">
+                 <strong class="text-white " > FOLLOW US :</strong>
+                  <div class="d-inline-block">
+                         <span class="fab fa-facebook"></span>
+                         <span class="fab fa-twitter"></span>
+                         <span class="fab fa-linkedin"></span>
+                         <span class="fab fa-youtube"></span>                  
+                  </div>
+            </div>
+             <div class="col-12 col-md-5 mt-3">
+                 <div class="apple logo d-inline-block"></div>
+                 <div class="android logo d-inline-block ml-2 ml-md-3"></div>
+             </div>
+       </div>
+           <p class="text-center py-1 text-white mb-0 mt-5 text">   
+           Alibaba.com Site: International - Español -
+           Português - Deutsch - Français - Italiano - हिंदी 
+          - Pусский - 한국어 - 日本語 - اللغة العربية - ภาษาไทย - Türk 
+            - Nederlands - tiếng Việt - Indonesian - עברית
+            </p>
+            <p class="text-center py-1 text-white mb-0 mt-2 text">    
+                    Alibaba Group | Taobao Marketplace | Tmall.com | Juhuasuan |
+                    AliExpress | Alibaba.com | 1688.com | Alimama | Fliggy | Tmall Taobao World
+                    Alibaba Cloud | AliOS | AliTelecom | Autonavi | UCWeb | Umeng 
+                   | Xiami | DingTalk | Alipay | Lazada | Alibaba Security
+            </p>
+            <p class="text-center py-1 text-white mb-0 mt-2 text">    
+                     Browse Alphabetically: Onetouch | Showroom | Country Search | Suppliers | Affiliate
+            </p>
+            <p class="text-center py-1 text-white mb-0 mt-2 text">    
+                     Product Listing Policy - 
+                     Intellectual Property Protection - Privacy Policy
+                      - Terms of Use - User Information Legal Enquiry Guide
+            </p>
+            <p class="text-center py-1 text-white mb-0 mt-2 text">    
+                     © 1999-2021 Alibaba.com. All rights reserved.
+                      浙公网安备 33010002000092号 浙B2-20120091
+            </p>                        
+    </div>
+      <div class="mobile-navigation w-100 p-0 mt-5 pt-5 d-block d-md-none">
+             <div class="row w-100 p-0 py-2 m-0 mx-auto ">
+                <div class="col-3 text-center home">
+                       <i class="fas fa-home"></i>
+                       <br>
+                       <span>Home</span>
+
+                </div>
+                <div class="col-3 text-center">
+                       <i class="far fa-eye"></i>
+                       <br>
+                       <span>True view</span>
+
+                </div>
+                <div class="col-3 text-center">
+                       <i class="far fa-comment-alt"></i>
+                       <br>
+                       <span>Messenger</span>
+
+                </div>
+                <div class="col-3 text-center">
+                       <i class="fas fa-cart-plus"></i>
+                       <br>
+                       <span>Cart</span>
+
+                </div>
+             </div>
+      </div>
+</footer>
+
+  <!-- jquery plugins  -->
+  <script>
+    $(document).ready(function(){
+         $('[data-toggle="tooltip"]').tooltip();
+     });
+    </script>
+<!-- font awesome icons -->
+      <script src="https://kit.fontawesome.com/9ee600ba89.js"></script>
+  <!--main script file-->
+<script src="./script.js"></script> 
+
+</body>
+</html>

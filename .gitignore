@@ -1,0 +1,3 @@
+# hide node modules directory when pushing to github.com
+
+/node_modules
